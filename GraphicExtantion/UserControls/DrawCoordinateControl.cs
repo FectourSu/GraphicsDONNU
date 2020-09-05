@@ -53,12 +53,14 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
                 pictureBox1.Size.Height - 1
                 );
 
+            //vertical line
             g.DrawLine(
                 Pens.Black,
                 new Point(0, pictureBox1.Height / 2),
                 new Point(pictureBox1.Width, pictureBox1.Height / 2)
                 );
 
+            //gorizontal line
             g.DrawLine(
                 Pens.Black,
                 new Point(pictureBox1.Width / 2, 0),
@@ -92,6 +94,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
                 p[x + 200] = new PointF(x, (float)y);
             }
         }
+        //Pixel
         private void button1_Click(object sender, EventArgs z)
         {
             // create bject g draw picture box 
@@ -107,6 +110,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             Graphic(g);
         }
 
+        //Millimetr
         private void button2_Click(object sender, EventArgs e)
         {
             // create bject g draw picture box 
@@ -122,6 +126,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             Graphic(g);
         }
 
+        //Inch
         private void button3_Click(object sender, EventArgs e)
         {
             // create bject g draw picture box 
