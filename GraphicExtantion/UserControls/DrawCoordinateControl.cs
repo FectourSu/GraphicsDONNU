@@ -12,10 +12,12 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
 {
     public partial class DrawCoordinateControl : UserControl
     {
-        private PointF[] p = new PointF[400];
         public DrawCoordinateControl()
         {
-            InitializeComponent(); button1.MouseEnter += (s, e) => {
+            InitializeComponent();
+            
+            /*Custom elements*/
+            button1.MouseEnter += (s, e) => {
                 button1.BackColor = Color.Black;
                 button1.ForeColor = Color.White;
             };
@@ -41,105 +43,111 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             };
         }
 
-        public void Graphic(Graphics g)
+        //Draw diagramma
+        private void DrawDiagram(float width, float height, GraphicsUnit gunit, float scale = 1)
         {
-            // Select pen 1 pixel size, color red
-            Pen myPen = new Pen(Color.Black, 1);
+            //create graph picture box
+            var graphics = pictureBox1.CreateGraphics();
 
-            /*Draw center screen*/
+            //millimetrs, inch, pixel
+            graphics.PageUnit = gunit;
 
-            g.DrawRectangle(
-                myPen, 0, 0, pictureBox1.Size.Width - 1,
-                pictureBox1.Size.Height - 1
-                );
+            //the beginning of coordinates
+            graphics.TranslateTransform(width / 2, height / 2);
 
-            //vertical line
-            g.DrawLine(
+            //zoom
+            graphics.ScaleTransform(scale, scale);
+
+            //custom graphic
+            graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            var pen = new Pen(Color.Purple, 0.25f);
+
+            graphics.DrawCurve(pen, SolveExpression((x) => (float)Math.Pow(x, 2) - x + 12, start: -100, end: 100).ToArray());
+        }
+
+        //Return collection and convertation Points array
+        private IEnumerable<PointF> SolveExpression(Func<float, float> func, float start, float end)
+        {
+            //array point
+            var points = new List<PointF>();
+
+            //invoke calculated formula
+            for (float i = start; i < end; i++)
+            {
+                points.Add(new PointF
+                {
+                    X = i,
+                    Y = func.Invoke(i)
+                });
+            }
+
+            //getting points for building a coordinate system
+            return points;
+        }
+
+        private void DrawCoordinateSystem(object sender, PaintEventArgs e)
+        {
+            var graphics = e.Graphics;
+
+            var control = sender as Control;
+
+            //size picture box
+            var width = control.Size.Width;
+            var height = control.Size.Height;
+
+            //rectangle
+            graphics.DrawRectangle(
                 Pens.Black,
-                new Point(0, pictureBox1.Height / 2),
-                new Point(pictureBox1.Width, pictureBox1.Height / 2)
+                new Rectangle(new Point(0, 0),
+                new Size(width - 1, height - 1))
                 );
 
             //gorizontal line
-            g.DrawLine(
+            graphics.DrawLine(
+               Pens.Black,
+               new Point(width / 2, 0),
+               new Point(width / 2, height));
+
+            //vertical line
+            graphics.DrawLine(
                 Pens.Black,
-                new Point(pictureBox1.Width / 2, 0),
-                new Point(pictureBox1.Width / 2, pictureBox1.Height)
-                );
-
-            Rectangle rect = pictureBox1.ClientRectangle;
-
-            var e = new PaintEventArgs(g, rect);
-
-            /*Smooth*/
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            /*Position - center screen*/
-            e.Graphics.TranslateTransform(pictureBox1.Width / 2, pictureBox1.Height / 2);
-
-            /*Scale pen*/
-            e.Graphics.ScaleTransform(1, 0.25F);
-
-            /*Color graphics*/
-            e.Graphics.DrawLines(Pens.Purple, p);
-
-            g.Dispose();
-
+                new Point(0, height / 2),
+                new Point(width, height / 2));
         }
-        private void Calc(double a, double b, double c, double d)
-        {
-            for (int x = -200; x < 200; x++)
-            {
-                double y = a * Math.Pow(Math.Sin(x - 1), 3) + b * Math.Pow(Math.Abs(x), 5) + c * x + d;
-                p[x + 200] = new PointF(x, (float)y);
-            }
-        }
+
         //Pixel
-        private void button1_Click(object sender, EventArgs z)
+        private void button1_Click(object sender, EventArgs e)
         {
-            // create bject g draw picture box 
-            Graphics g = pictureBox1.CreateGraphics();
+            //Clear PB
+            pictureBox1.Refresh();
 
-            /*Clear PBox*/
-            g.Clear(Color.White);
-
-            /*Formula calc*/
-            Calc(0.00151, 0.00075, 0.0377, 7.559);
-
-            // Draw rectangle:
-            Graphic(g);
+            //pixel and  1f scale
+            DrawDiagram(pictureBox1.Width, pictureBox1.Height, GraphicsUnit.Pixel, 1f);
         }
 
         //Millimetr
         private void button2_Click(object sender, EventArgs e)
         {
-            // create bject g draw picture box 
-            Graphics g = pictureBox1.CreateGraphics();
+            //Clear PB
+            pictureBox1.Refresh();
 
-            /*Clear PBox*/
-            g.Clear(Color.White);
-
-            /*Formula calc*/
-            Calc(0.0004, 0.0002, 0.01, 2.0);
-
-            // Draw rectangle:
-            Graphic(g);
+            //1 millimetr = 3.794f pixels and  0.5f scale
+            DrawDiagram(pictureBox1.Width / 3.794f, pictureBox1.Height / 3.794f, GraphicsUnit.Millimeter, 0.5f);
         }
 
         //Inch
         private void button3_Click(object sender, EventArgs e)
         {
-            // create bject g draw picture box 
-            Graphics g = pictureBox1.CreateGraphics();
+            //Clear PB
+            pictureBox1.Refresh();
 
-            /*Clear PBox*/
-            g.Clear(Color.White);
+            //1 inch = 96.358 pixels and 0.025f scale
+            DrawDiagram(pictureBox1.Width / 96.358f, pictureBox1.Height / 96.358f, GraphicsUnit.Inch, 0.025f);
+        }
 
-            /*Formula calc*/
-            Calc(0.000015, 0.000008, 0.0004, 0.0787);
-
-            // Draw rectangle:
-            Graphic(g);
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            DrawCoordinateSystem(sender, (PaintEventArgs)e);
         }
     }
 }

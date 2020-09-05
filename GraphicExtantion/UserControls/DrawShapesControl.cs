@@ -15,6 +15,8 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         public DrawShapesControl()
         {
             InitializeComponent();
+
+            //custom element
             button1.MouseEnter += (s, e) => {
                 button1.BackColor = Color.Black;
                 button1.ForeColor = Color.White;
@@ -54,7 +56,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             Graphics g = pictureBox1.CreateGraphics();
 
             /*Clear PBox*/
-            g.Clear(Color.White);
+            pictureBox1.Refresh();
 
             g.FillRectangle(blueBrush, rect);
 
@@ -72,12 +74,10 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             Graphics g = pictureBox1.CreateGraphics();
 
             /*Clear PBox*/
-            g.Clear(Color.White);
+            pictureBox1.Refresh();
 
             // Draw rectangle:
-            g.DrawRectangle(myPen, 0, 0, pictureBox1.Size.Width - 1,
-
-            pictureBox1.Size.Height - 1);
+            g.DrawRectangle(myPen, 0, 0, pictureBox1.Size.Width - 1, pictureBox1.Size.Height - 1);
 
             g.Dispose();
         }
@@ -88,7 +88,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             Graphics g = pictureBox1.CreateGraphics();
 
             /*Clear PBox*/
-            g.Clear(Color.White);
+            pictureBox1.Refresh();
 
             /*Сreated rect component*/
             Rectangle rect = pictureBox1.ClientRectangle;
