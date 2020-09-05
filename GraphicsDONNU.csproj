@@ -61,7 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DragControl.cs">
+    <Compile Include="Helper\DragControl.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawCoordinateControl.cs">
@@ -77,10 +77,10 @@
       <DependentUpon>DrawShapesControl.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\UserControls.cs" />
-    <Compile Include="MainForms.cs">
+    <Compile Include="View\MainForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForms.Designer.cs">
+    <Compile Include="View\MainForms.Designer.cs">
       <DependentUpon>MainForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Presenter\Presenter.cs" />
@@ -92,7 +92,7 @@
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawShapesControl.resx">
       <DependentUpon>DrawShapesControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForms.resx">
+    <EmbeddedResource Include="View\MainForms.resx">
       <DependentUpon>MainForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
