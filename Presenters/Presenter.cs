@@ -21,7 +21,8 @@ namespace WindowsFormsApp1.Presenter
             userControls = new UserControls()
             {
                 DrawShape = new DrawShapesControl(),
-                DrawCordinate = new DrawCoordinateControl()
+                DrawCordinate = new DrawCoordinateControl(),
+                DrawText = new DrawTextControl()
             };
 
             #region Event
@@ -31,6 +32,9 @@ namespace WindowsFormsApp1.Presenter
 
             /*Draw coordinate*/
             view.btnCoordinate.Click += (s, e) => view.AddControlsToPanel(userControls.DrawCordinate);
+
+            /*Draw text*/
+            view.btnText.Click += (s, e) => view.AddControlsToPanel(userControls.DrawText);
 
             /*Close main form*/
             view.pClose.Click += (s, e) => view.Close();

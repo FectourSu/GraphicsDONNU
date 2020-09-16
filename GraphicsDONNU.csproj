@@ -61,6 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GraphicExtantion\UserControls\DrawTextClass\Factory\TextFactory.cs" />
+    <Compile Include="GraphicExtantion\UserControls\DrawTextClass\Models\BaseWrite.cs" />
+    <Compile Include="GraphicExtantion\UserControls\DrawTextClass\Models\WriteTextModel.cs" />
+    <Compile Include="GraphicExtantion\UserControls\DrawTextClass\Services\Interface\ITextOutput.cs" />
+    <Compile Include="GraphicExtantion\UserControls\DrawTextClass\Services\SerializeText.cs" />
+    <Compile Include="GraphicExtantion\UserControls\DrawTextClass\Services\TextOutput.cs" />
+    <Compile Include="GraphicExtantion\UserControls\DrawTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawTextControl.Designer.cs">
+      <DependentUpon>DrawTextControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper\DragControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -83,7 +95,7 @@
     <Compile Include="View\MainForms.Designer.cs">
       <DependentUpon>MainForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presenter\Presenter.cs" />
+    <Compile Include="Presenters\Presenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawCoordinateControl.resx">
@@ -91,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawShapesControl.resx">
       <DependentUpon>DrawShapesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawTextControl.resx">
+      <DependentUpon>DrawTextControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainForms.resx">
       <DependentUpon>MainForms.cs</DependentUpon>
@@ -129,5 +144,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

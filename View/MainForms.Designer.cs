@@ -32,12 +32,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnDrawShapes = new System.Windows.Forms.Button();
             this.btnCoordinate = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnText = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pLineDarkVertical = new System.Windows.Forms.Panel();
             this.pBlackLine = new System.Windows.Forms.Panel();
@@ -48,6 +47,7 @@
             this.pDarkTheme = new System.Windows.Forms.PictureBox();
             this.dragControl1 = new Project_1PCS_16_.DragControl();
             this.dragControl2 = new Project_1PCS_16_.DragControl();
+            this.button11 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
             this.pDark.SuspendLayout();
@@ -95,23 +95,23 @@
             this.btnCoordinate.Name = "btnCoordinate";
             this.btnCoordinate.Size = new System.Drawing.Size(219, 58);
             this.btnCoordinate.TabIndex = 10;
-            this.btnCoordinate.Text = "CoordinateSystem";
+            this.btnCoordinate.Text = "DrawChart";
             this.btnCoordinate.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnText
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button6.Location = new System.Drawing.Point(-2, 179);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(219, 58);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Shapes";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnText.BackColor = System.Drawing.Color.Transparent;
+            this.btnText.FlatAppearance.BorderSize = 0;
+            this.btnText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnText.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnText.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnText.Location = new System.Drawing.Point(-2, 179);
+            this.btnText.Margin = new System.Windows.Forms.Padding(4);
+            this.btnText.Name = "btnText";
+            this.btnText.Size = new System.Drawing.Size(219, 58);
+            this.btnText.TabIndex = 11;
+            this.btnText.Text = "DrawText";
+            this.btnText.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
@@ -172,21 +172,6 @@
             this.button10.TabIndex = 15;
             this.button10.Text = "Shapes";
             this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button11.Location = new System.Drawing.Point(-2, 457);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(219, 58);
-            this.button11.TabIndex = 16;
-            this.button11.Text = "Shapes";
-            this.button11.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -270,6 +255,21 @@
             // 
             this.dragControl2.SelectControl = this.panelMain;
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button11.Location = new System.Drawing.Point(-2, 457);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(219, 58);
+            this.button11.TabIndex = 16;
+            this.button11.Text = "Shapes";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
             // MainForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -284,7 +284,7 @@
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnText);
             this.Controls.Add(this.btnCoordinate);
             this.Controls.Add(this.btnDrawShapes);
             this.Controls.Add(this.label3);
@@ -309,12 +309,11 @@
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Button btnDrawShapes;
         public System.Windows.Forms.Button btnCoordinate;
-        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button btnText;
         public System.Windows.Forms.Button button7;
         public System.Windows.Forms.Button button8;
         public System.Windows.Forms.Button button9;
         public System.Windows.Forms.Button button10;
-        public System.Windows.Forms.Button button11;
         private System.Windows.Forms.Panel panelMain;
         public System.Windows.Forms.PictureBox pClose;
         public System.Windows.Forms.Label label3;
@@ -325,6 +324,7 @@
         public System.Windows.Forms.Panel pBlackLine;
         private Project_1PCS_16_.DragControl dragControl1;
         private Project_1PCS_16_.DragControl dragControl2;
+        public System.Windows.Forms.Button button11;
     }
 }
 

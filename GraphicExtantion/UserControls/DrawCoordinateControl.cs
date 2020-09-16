@@ -42,7 +42,6 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
                 button3.ForeColor = SystemColors.ControlDarkDark;
             };
         }
-
         //Draw diagramma
         private void DrawDiagram(float width, float height, GraphicsUnit gunit, float scale = 1)
         {
@@ -113,6 +112,21 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
                 Pens.Black,
                 new Point(0, height / 2),
                 new Point(width, height / 2));
+
+            Font font = new Font("Roboto", 10);
+
+            graphics.DrawString(
+                "X",
+                font,
+                Brushes.Black,
+                new Point(width - 20, height/2)
+                );
+            graphics.DrawString(
+                "Y",
+                font,
+                Brushes.Black,
+                new Point(width / 2 + 3, 3)
+                );
         }
 
         //Pixel
