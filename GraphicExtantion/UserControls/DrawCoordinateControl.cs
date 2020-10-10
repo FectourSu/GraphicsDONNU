@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Helper;
 
 namespace WindowsFormsApp1.GraphicExtantion.UserControls
 {
@@ -15,32 +16,8 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         public DrawCoordinateControl()
         {
             InitializeComponent();
-            
-            /*Custom elements*/
-            button1.MouseEnter += (s, e) => {
-                button1.BackColor = Color.Black;
-                button1.ForeColor = Color.White;
-            };
-            button1.MouseLeave += (s, e) => {
-                button1.BackColor = Color.Transparent;
-                button1.ForeColor = SystemColors.ControlDarkDark;
-            };
-            button2.MouseEnter += (s, e) => {
-                button2.BackColor = Color.Black;
-                button2.ForeColor = Color.White;
-            };
-            button2.MouseLeave += (s, e) => {
-                button2.BackColor = Color.Transparent;
-                button2.ForeColor = SystemColors.ControlDarkDark;
-            };
-            button3.MouseEnter += (s, e) => {
-                button3.BackColor = Color.Black;
-                button3.ForeColor = Color.White;
-            };
-            button3.MouseLeave += (s, e) => {
-                button3.BackColor = Color.Transparent;
-                button3.ForeColor = SystemColors.ControlDarkDark;
-            };
+
+            CustomizerFormElements.CustomButton(this.Controls.OfType<Button>().ToList());
         }
         //Draw diagramma
         private void DrawDiagram(float width, float height, GraphicsUnit gunit, float scale = 1)
@@ -142,7 +119,6 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         //Millimetr
         private void button2_Click(object sender, EventArgs e)
         {
-            //Clear PB
             pictureBox1.Refresh();
 
             //1 millimetr = 3.794f pixels and  0.5f scale
@@ -152,7 +128,6 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         //Inch
         private void button3_Click(object sender, EventArgs e)
         {
-            //Clear PB
             pictureBox1.Refresh();
 
             //1 inch = 96.358 pixels and 0.025f scale

@@ -11,5 +11,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         public DrawShapesControl DrawShape { get; set; }
         public DrawCoordinateControl DrawCordinate { get; set; }
         public DrawTextControl DrawText { get; set; }
+        public DrawGraphicsTemperatures DrawGraphics { get; set; }
+
     }
 }

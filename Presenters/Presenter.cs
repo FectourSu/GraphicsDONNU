@@ -22,7 +22,8 @@ namespace WindowsFormsApp1.Presenter
             {
                 DrawShape = new DrawShapesControl(),
                 DrawCordinate = new DrawCoordinateControl(),
-                DrawText = new DrawTextControl()
+                DrawText = new DrawTextControl(),
+                DrawGraphics = new DrawGraphicsTemperatures()
             };
 
             #region Event
@@ -35,6 +36,9 @@ namespace WindowsFormsApp1.Presenter
 
             /*Draw text*/
             view.btnText.Click += (s, e) => view.AddControlsToPanel(userControls.DrawText);
+
+            /*Draw graphics*/
+            view.btnGraphics.Click += (s, e) => view.AddControlsToPanel(userControls.DrawGraphics);
 
             /*Close main form*/
             view.pClose.Click += (s, e) => view.Close();

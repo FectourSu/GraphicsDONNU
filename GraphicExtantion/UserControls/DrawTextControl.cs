@@ -11,6 +11,7 @@ using WindowsFormsApp1.GraphicExtantion.UserControls.DrawTextClass.Services;
 using WindowsFormsApp1.GraphicExtantion.UserControls.DrawTextClass.Services.Interface;
 using WindowsFormsApp1.GraphicExtantion.UserControls.DrawTextClass.Models;
 using System.IO;
+using WindowsFormsApp1.Helper;
 
 namespace WindowsFormsApp1.GraphicExtantion.UserControls
 {
@@ -38,31 +39,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             if (File.Exists($"{AppContext.BaseDirectory}data.xml"))
                 this.baseWrites.AddRange(this.serializeText.Deserialize<BaseWrite[]>());
 
-            //custom element
-            button1.MouseEnter += (s, e) => {
-                button1.BackColor = Color.Black;
-                button1.ForeColor = Color.White;
-            };
-            button1.MouseLeave += (s, e) => {
-                button1.BackColor = Color.Transparent;
-                button1.ForeColor = SystemColors.ControlDarkDark;
-            };
-            button2.MouseEnter += (s, e) => {
-                button2.BackColor = Color.Black;
-                button2.ForeColor = Color.White;
-            };
-            button2.MouseLeave += (s, e) => {
-                button2.BackColor = Color.Transparent;
-                button2.ForeColor = SystemColors.ControlDarkDark;
-            };
-            button3.MouseEnter += (s, e) => {
-                button3.BackColor = Color.Black;
-                button3.ForeColor = Color.White;
-            };
-            button3.MouseLeave += (s, e) => {
-                button3.BackColor = Color.Transparent;
-                button3.ForeColor = SystemColors.ControlDarkDark;
-            };
+            CustomizerFormElements.CustomButton(this.Controls.OfType<Button>().ToList());
         }
 
         private IEnumerable<BaseWrite> Create(TextFactory textFactory, string text, Font font, StringAlignment aligment, int count)
