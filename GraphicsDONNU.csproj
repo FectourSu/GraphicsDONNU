@@ -79,6 +79,12 @@
     <Compile Include="GraphicExtantion\UserControls\DrawTextControl.Designer.cs">
       <DependentUpon>DrawTextControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawStatistics.Designer.cs">
+      <DependentUpon>DrawStatistics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper\CustomizerFormElements.cs" />
     <Compile Include="Helper\DragControl.cs">
       <SubType>Component</SubType>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawTextControl.resx">
       <DependentUpon>DrawTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawStatistics.resx">
+      <DependentUpon>DrawStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainForms.resx">
       <DependentUpon>MainForms.cs</DependentUpon>

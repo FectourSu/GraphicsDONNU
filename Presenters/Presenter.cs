@@ -23,7 +23,8 @@ namespace WindowsFormsApp1.Presenter
                 DrawShape = new DrawShapesControl(),
                 DrawCordinate = new DrawCoordinateControl(),
                 DrawText = new DrawTextControl(),
-                DrawGraphics = new DrawGraphicsTemperatures()
+                DrawGraphics = new DrawGraphicsTemperatures(),
+                DrawStatistic = new DrawStatistics()
             };
 
             #region Event
@@ -40,9 +41,10 @@ namespace WindowsFormsApp1.Presenter
             /*Draw graphics*/
             view.btnGraphics.Click += (s, e) => view.AddControlsToPanel(userControls.DrawGraphics);
 
+            view.btn_Statistic.Click += (s, e) => view.AddControlsToPanel(userControls.DrawStatistic);
+
             /*Close main form*/
             view.pClose.Click += (s, e) => view.Close();
-
             /*Custom dark-theme*/
             view.pDarkTheme.Click += (s, e) =>
             {

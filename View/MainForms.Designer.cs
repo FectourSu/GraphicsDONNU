@@ -34,7 +34,7 @@
             this.btnCoordinate = new System.Windows.Forms.Button();
             this.btnText = new System.Windows.Forms.Button();
             this.btnGraphics = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_Statistic = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -128,20 +128,20 @@
             this.btnGraphics.Text = "DrawGraphics";
             this.btnGraphics.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btn_Statistic
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button8.Location = new System.Drawing.Point(-2, 292);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(219, 58);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "Shapes";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btn_Statistic.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Statistic.FlatAppearance.BorderSize = 0;
+            this.btn_Statistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Statistic.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_Statistic.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_Statistic.Location = new System.Drawing.Point(-2, 292);
+            this.btn_Statistic.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Statistic.Name = "btn_Statistic";
+            this.btn_Statistic.Size = new System.Drawing.Size(219, 58);
+            this.btn_Statistic.TabIndex = 13;
+            this.btn_Statistic.Text = "DrawStatistic";
+            this.btn_Statistic.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
@@ -282,7 +282,7 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btn_Statistic);
             this.Controls.Add(this.btnGraphics);
             this.Controls.Add(this.btnText);
             this.Controls.Add(this.btnCoordinate);
@@ -311,7 +311,7 @@
         public System.Windows.Forms.Button btnCoordinate;
         public System.Windows.Forms.Button btnText;
         public System.Windows.Forms.Button btnGraphics;
-        public System.Windows.Forms.Button button8;
+        public System.Windows.Forms.Button btn_Statistic;
         public System.Windows.Forms.Button button9;
         public System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panelMain;
