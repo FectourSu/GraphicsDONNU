@@ -67,6 +67,12 @@
     <Compile Include="GraphicExtantion\UserControls\DrawGraphicsTemperatures.Designer.cs">
       <DependentUpon>DrawGraphicsTemperatures.cs</DependentUpon>
     </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawStaticImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawStaticImage.Designer.cs">
+      <DependentUpon>DrawStaticImage.cs</DependentUpon>
+    </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawTextFactory\Factory\TextFactory.cs" />
     <Compile Include="GraphicExtantion\UserControls\DrawTextFactory\Models\BaseWrite.cs" />
     <Compile Include="GraphicExtantion\UserControls\DrawTextFactory\Models\WriteTextModel.cs" />
@@ -85,6 +91,7 @@
     <Compile Include="GraphicExtantion\UserControls\DrawStatistics.Designer.cs">
       <DependentUpon>DrawStatistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\BitmapExtension.cs" />
     <Compile Include="Helper\CustomizerFormElements.cs" />
     <Compile Include="Helper\DragControl.cs">
       <SubType>Component</SubType>
@@ -102,6 +109,11 @@
       <DependentUpon>DrawShapesControl.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\UserControls.cs" />
+    <Compile Include="ImageDraw\Background.cs" />
+    <Compile Include="ImageDraw\Human.cs" />
+    <Compile Include="ImageDraw\IDrawable.cs" />
+    <Compile Include="ImageDraw\Road.cs" />
+    <Compile Include="ImageDraw\Star.cs" />
     <Compile Include="View\MainForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawShapesControl.resx">
       <DependentUpon>DrawShapesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawStaticImage.resx">
+      <DependentUpon>DrawStaticImage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawTextControl.resx">
       <DependentUpon>DrawTextControl.cs</DependentUpon>

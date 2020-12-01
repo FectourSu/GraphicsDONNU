@@ -24,7 +24,8 @@ namespace WindowsFormsApp1.Presenter
                 DrawCordinate = new DrawCoordinateControl(),
                 DrawText = new DrawTextControl(),
                 DrawGraphics = new DrawGraphicsTemperatures(),
-                DrawStatistic = new DrawStatistics()
+                DrawStatistic = new DrawStatistics(),
+                DrawImage = new DrawStaticImage()
             };
 
             #region Event
@@ -42,6 +43,9 @@ namespace WindowsFormsApp1.Presenter
             view.btnGraphics.Click += (s, e) => view.AddControlsToPanel(userControls.DrawGraphics);
 
             view.btn_Statistic.Click += (s, e) => view.AddControlsToPanel(userControls.DrawStatistic);
+
+            view.btnDrawArt.Click += (s, e) => view.AddControlsToPanel(userControls.DrawImage);
+
 
             /*Close main form*/
             view.pClose.Click += (s, e) => view.Close();

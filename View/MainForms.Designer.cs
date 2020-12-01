@@ -35,7 +35,7 @@
             this.btnText = new System.Windows.Forms.Button();
             this.btnGraphics = new System.Windows.Forms.Button();
             this.btn_Statistic = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnDrawArt = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pLineDarkVertical = new System.Windows.Forms.Panel();
@@ -143,20 +143,20 @@
             this.btn_Statistic.Text = "DrawStatistic";
             this.btn_Statistic.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btnDrawArt
             // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button9.Location = new System.Drawing.Point(-2, 345);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(219, 58);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "Shapes";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnDrawArt.BackColor = System.Drawing.Color.Transparent;
+            this.btnDrawArt.FlatAppearance.BorderSize = 0;
+            this.btnDrawArt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDrawArt.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDrawArt.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnDrawArt.Location = new System.Drawing.Point(-2, 345);
+            this.btnDrawArt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDrawArt.Name = "btnDrawArt";
+            this.btnDrawArt.Size = new System.Drawing.Size(219, 58);
+            this.btnDrawArt.TabIndex = 14;
+            this.btnDrawArt.Text = "DrawArt";
+            this.btnDrawArt.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
@@ -281,7 +281,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.btnDrawArt);
             this.Controls.Add(this.btn_Statistic);
             this.Controls.Add(this.btnGraphics);
             this.Controls.Add(this.btnText);
@@ -312,7 +312,7 @@
         public System.Windows.Forms.Button btnText;
         public System.Windows.Forms.Button btnGraphics;
         public System.Windows.Forms.Button btn_Statistic;
-        public System.Windows.Forms.Button button9;
+        public System.Windows.Forms.Button btnDrawArt;
         public System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panelMain;
         public System.Windows.Forms.PictureBox pClose;
