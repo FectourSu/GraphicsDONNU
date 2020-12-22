@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using WindowsFormsApp1.GraphicExtantion;
 using WindowsFormsApp1.GraphicExtantion.UserControls;
 
 namespace WindowsFormsApp1.Presenter
@@ -25,13 +26,16 @@ namespace WindowsFormsApp1.Presenter
                 DrawText = new DrawTextControl(),
                 DrawGraphics = new DrawGraphicsTemperatures(),
                 DrawStatistic = new DrawStatistics(),
-                DrawImage = new DrawStaticImage()
+                DrawImage = new DrawStaticImage(),
+                DrawAnimate = new DrawAnimateImage(),
+                DrawPlay = new DrawPlayGame()
             };
 
             #region Event
 
             /*Draw shape*/
             view.btnDrawShapes.Click += (s, e) => view.AddControlsToPanel(userControls.DrawShape);
+
 
             /*Draw coordinate*/
             view.btnCoordinate.Click += (s, e) => view.AddControlsToPanel(userControls.DrawCordinate);
@@ -46,6 +50,9 @@ namespace WindowsFormsApp1.Presenter
 
             view.btnDrawArt.Click += (s, e) => view.AddControlsToPanel(userControls.DrawImage);
 
+            view.btnAnimate.Click += (s, e) => view.AddControlsToPanel(userControls.DrawAnimate);
+
+            view.btnGame.Click += (s, e) => view.AddControlsToPanel(userControls.DrawGame);
 
             /*Close main form*/
             view.pClose.Click += (s, e) => view.Close();

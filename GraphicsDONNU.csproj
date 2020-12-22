@@ -61,11 +61,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GraphicExtantion\UserControls\DrawGame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawGame.Designer.cs">
+      <DependentUpon>DrawGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawAnimateImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawAnimateImage.Designer.cs">
+      <DependentUpon>DrawAnimateImage.cs</DependentUpon>
+    </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawGraphicsTemperatures.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawGraphicsTemperatures.Designer.cs">
       <DependentUpon>DrawGraphicsTemperatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawPlayGame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawPlayGame.Designer.cs">
+      <DependentUpon>DrawPlayGame.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawStaticImage.cs">
       <SubType>UserControl</SubType>
@@ -123,11 +141,20 @@
     <Compile Include="Presenters\Presenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawGame.resx">
+      <DependentUpon>DrawGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawAnimateImage.resx">
+      <DependentUpon>DrawAnimateImage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawCoordinateControl.resx">
       <DependentUpon>DrawCoordinateControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawGraphicsTemperatures.resx">
       <DependentUpon>DrawGraphicsTemperatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawPlayGame.resx">
+      <DependentUpon>DrawPlayGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawShapesControl.resx">
       <DependentUpon>DrawShapesControl.cs</DependentUpon>
@@ -152,6 +179,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,6 +206,41 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="bin\Debug\4135914.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\c9390a724a45b1a9f4dfe89d18f3e82b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\FishBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\human.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\river.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\river.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\XiPu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dbw641m-85d2dfe9-730d-44a0-8942-7e6074e54af2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

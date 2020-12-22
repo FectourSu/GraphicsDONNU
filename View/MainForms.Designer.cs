@@ -36,7 +36,7 @@
             this.btnGraphics = new System.Windows.Forms.Button();
             this.btn_Statistic = new System.Windows.Forms.Button();
             this.btnDrawArt = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnAnimate = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pLineDarkVertical = new System.Windows.Forms.Panel();
             this.pBlackLine = new System.Windows.Forms.Panel();
@@ -47,7 +47,7 @@
             this.pDarkTheme = new System.Windows.Forms.PictureBox();
             this.dragControl1 = new Project_1PCS_16_.DragControl();
             this.dragControl2 = new Project_1PCS_16_.DragControl();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnGame = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pClose)).BeginInit();
             this.pDark.SuspendLayout();
@@ -158,20 +158,20 @@
             this.btnDrawArt.Text = "DrawArt";
             this.btnDrawArt.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btnAnimate
             // 
-            this.button10.BackColor = System.Drawing.Color.Transparent;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button10.Location = new System.Drawing.Point(-2, 402);
-            this.button10.Margin = new System.Windows.Forms.Padding(4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(219, 58);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "Shapes";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnAnimate.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnimate.FlatAppearance.BorderSize = 0;
+            this.btnAnimate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnimate.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAnimate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnAnimate.Location = new System.Drawing.Point(-2, 402);
+            this.btnAnimate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAnimate.Name = "btnAnimate";
+            this.btnAnimate.Size = new System.Drawing.Size(219, 58);
+            this.btnAnimate.TabIndex = 15;
+            this.btnAnimate.Text = "DrawAnimateArt";
+            this.btnAnimate.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -255,20 +255,20 @@
             // 
             this.dragControl2.SelectControl = this.panelMain;
             // 
-            // button11
+            // btnGame
             // 
-            this.button11.BackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button11.Location = new System.Drawing.Point(-2, 457);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(219, 58);
-            this.button11.TabIndex = 16;
-            this.button11.Text = "Shapes";
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnGame.BackColor = System.Drawing.Color.Transparent;
+            this.btnGame.FlatAppearance.BorderSize = 0;
+            this.btnGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGame.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnGame.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnGame.Location = new System.Drawing.Point(-2, 457);
+            this.btnGame.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGame.Name = "btnGame";
+            this.btnGame.Size = new System.Drawing.Size(219, 58);
+            this.btnGame.TabIndex = 16;
+            this.btnGame.Text = "DrawGame";
+            this.btnGame.UseVisualStyleBackColor = false;
             // 
             // MainForms
             // 
@@ -279,8 +279,8 @@
             this.Controls.Add(this.pClose);
             this.Controls.Add(this.pBlackLine);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.btnGame);
+            this.Controls.Add(this.btnAnimate);
             this.Controls.Add(this.btnDrawArt);
             this.Controls.Add(this.btn_Statistic);
             this.Controls.Add(this.btnGraphics);
@@ -313,7 +313,7 @@
         public System.Windows.Forms.Button btnGraphics;
         public System.Windows.Forms.Button btn_Statistic;
         public System.Windows.Forms.Button btnDrawArt;
-        public System.Windows.Forms.Button button10;
+        public System.Windows.Forms.Button btnAnimate;
         private System.Windows.Forms.Panel panelMain;
         public System.Windows.Forms.PictureBox pClose;
         public System.Windows.Forms.Label label3;
@@ -324,7 +324,7 @@
         public System.Windows.Forms.Panel pBlackLine;
         private Project_1PCS_16_.DragControl dragControl1;
         private Project_1PCS_16_.DragControl dragControl2;
-        public System.Windows.Forms.Button button11;
+        public System.Windows.Forms.Button btnGame;
     }
 }
 

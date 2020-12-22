@@ -14,6 +14,8 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         public DrawGraphicsTemperatures DrawGraphics { get; set; }
         public DrawStatistics DrawStatistic { get; set; }
         public DrawStaticImage DrawImage { get; set; }
-
+        public DrawGame DrawGame { get => new DrawGame(); }
+        public DrawAnimateImage DrawAnimate { get; set; }
+        public DrawPlayGame DrawPlay { get; set; }
     }
 }

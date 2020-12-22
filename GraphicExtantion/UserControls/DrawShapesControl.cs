@@ -19,6 +19,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
 
             CustomizerFormElements.CustomButton(this.Controls.OfType<Button>().ToList());
         }
+
         /*Fill rectangle*/
         private void button1_Click_1(object sender, EventArgs e)
         {
