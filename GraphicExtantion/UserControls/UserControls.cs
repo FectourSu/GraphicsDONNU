@@ -21,8 +21,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
 
         //two page
         public DrawRotate DrawRotate { get; set; }
-
         public DrawClippingLines DrawClippingLines { get; set; }
-
+        public DrawGenerationCurves DrawGenerationCurves { get; set; }
     }
 }

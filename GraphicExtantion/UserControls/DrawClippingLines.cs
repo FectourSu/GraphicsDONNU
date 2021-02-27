@@ -132,8 +132,9 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         /* Основной код программы */
         private void button1_Click(object sender, EventArgs e)
         {
-            timer1.Interval = 123;
+            timer1.Interval = 132;
             timer1.Start();
+
         }
     }
 }

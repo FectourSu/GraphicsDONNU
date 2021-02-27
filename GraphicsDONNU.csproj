@@ -79,6 +79,12 @@
     <Compile Include="GraphicExtantion\UserControls\DrawAnimateImage.Designer.cs">
       <DependentUpon>DrawAnimateImage.cs</DependentUpon>
     </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawGenerationCurves.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawGenerationCurves.Designer.cs">
+      <DependentUpon>DrawGenerationCurves.cs</DependentUpon>
+    </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawGraphicsTemperatures.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawCoordinateControl.resx">
       <DependentUpon>DrawCoordinateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawGenerationCurves.resx">
+      <DependentUpon>DrawGenerationCurves.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawGraphicsTemperatures.resx">
       <DependentUpon>DrawGraphicsTemperatures.cs</DependentUpon>

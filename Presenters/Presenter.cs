@@ -43,7 +43,8 @@ namespace WindowsFormsApp1.Presenter
                 DrawAnimate = new DrawAnimateImage(),
                 DrawPlay = new DrawPlayGame(),
                 DrawRotate = new DrawRotate(),
-                DrawClippingLines = new DrawClippingLines()
+                DrawClippingLines = new DrawClippingLines(),
+                DrawGenerationCurves = new DrawGenerationCurves()
             };
 
             #region Event
@@ -73,6 +74,7 @@ namespace WindowsFormsApp1.Presenter
 
             view.btn_DCL.Click += (s, e) => view.AddControlsToPanel(userControls.DrawClippingLines);
 
+            view.btn_Gen.Click += (s, e) => view.AddControlsToPanel(userControls.DrawGenerationCurves);
             /*Close main form*/
             view.pClose.Click += (s, e) => view.Close();
             #endregion
