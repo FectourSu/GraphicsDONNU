@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Tracing;
+﻿using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -9,6 +10,10 @@ namespace WindowsFormsApp1.Presenter
 {
     class Presenter
     {
+        /*to switch to the next page*/
+        private readonly List<Button> onePage;
+        private readonly List<Button> twoPage;
+
         /*Object Main Forms*/
         private readonly MainForms view;
 
@@ -17,7 +22,15 @@ namespace WindowsFormsApp1.Presenter
 
         public Presenter(MainForms form)
         {
+            onePage = new List<Button>();
+
+            twoPage = new List<Button>();
+
             view = form;
+
+            twoPage = view.Controls.OfType<Button>().Where((b, i) => i < 8).ToList();
+
+            onePage = view.Controls.OfType<Button>().Where((b, i) => i > 7).ToList();
 
             userControls = new UserControls()
             {
@@ -28,7 +41,9 @@ namespace WindowsFormsApp1.Presenter
                 DrawStatistic = new DrawStatistics(),
                 DrawImage = new DrawStaticImage(),
                 DrawAnimate = new DrawAnimateImage(),
-                DrawPlay = new DrawPlayGame()
+                DrawPlay = new DrawPlayGame(),
+                DrawRotate = new DrawRotate(),
+                DrawClippingLines = new DrawClippingLines()
             };
 
             #region Event
@@ -54,15 +69,22 @@ namespace WindowsFormsApp1.Presenter
 
             view.btnGame.Click += (s, e) => view.AddControlsToPanel(userControls.DrawGame);
 
+            view.btnRotate.Click += (s, e) => view.AddControlsToPanel(userControls.DrawRotate);
+
+            view.btn_DCL.Click += (s, e) => view.AddControlsToPanel(userControls.DrawClippingLines);
+
             /*Close main form*/
             view.pClose.Click += (s, e) => view.Close();
+            #endregion
+
+            #region Dark theme style
             /*Custom dark-theme*/
             view.pDarkTheme.Click += (s, e) =>
             {
                 view.pDark.BackColor = Color.Black;
 
-                view.label3.BackColor = Color.Black;
-                view.label3.ForeColor = Color.White;
+                view.btnPrev.BackColor = Color.Black;
+                view.btnPrev.ForeColor = Color.White;
 
                 foreach (Control controls in view.Controls)
                 {
@@ -81,8 +103,8 @@ namespace WindowsFormsApp1.Presenter
             {
                 view.pDark.BackColor = Color.Transparent;
 
-                view.label3.BackColor = Color.Transparent;
-                view.label3.ForeColor = SystemColors.ControlDarkDark;
+                view.btnPrev.BackColor = Color.Transparent;
+                view.btnPrev.ForeColor = SystemColors.ControlDarkDark;
 
                 foreach (Control controls in view.Controls)
                 {
@@ -97,7 +119,32 @@ namespace WindowsFormsApp1.Presenter
                 view.pBlackLine.BackColor = SystemColors.ControlDarkDark;
                 view.pLineDarkVertical.Visible = true;
             };
-            
+
+
+            view.btnNext.Click += (s, e) =>
+            {
+                view.btnNext.Visible = false;
+                view.btnPrev.Visible = true;
+
+                for (int i = 0; i < onePage.Count; i++)
+                    onePage[i].Visible = false;
+
+                for (int i = 0; i < twoPage.Count; i++)
+                    twoPage[i].Visible = true;
+            };
+
+            view.btnPrev.Click += (s, e) =>
+            {
+                view.btnNext.Visible = true;
+                view.btnPrev.Visible = false;
+
+                for (int i = 0; i < onePage.Count; i++)
+                    onePage[i].Visible = true;
+
+                for (int i = 0; i < twoPage.Count; i++)
+                    twoPage[i].Visible = false;
+
+            };
             #endregion
         }
     }

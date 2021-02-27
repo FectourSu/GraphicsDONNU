@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GraphicExtantion\UserControls\DrawClippingLines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawClippingLines.Designer.cs">
+      <DependentUpon>DrawClippingLines.cs</DependentUpon>
+    </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawGame.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawPlayGame.Designer.cs">
       <DependentUpon>DrawPlayGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawRotate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawRotate.Designer.cs">
+      <DependentUpon>DrawRotate.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawStaticImage.cs">
       <SubType>UserControl</SubType>
@@ -141,6 +153,9 @@
     <Compile Include="Presenters\Presenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawClippingLines.resx">
+      <DependentUpon>DrawClippingLines.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawGame.resx">
       <DependentUpon>DrawGame.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawPlayGame.resx">
       <DependentUpon>DrawPlayGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawRotate.resx">
+      <DependentUpon>DrawRotate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawShapesControl.resx">
       <DependentUpon>DrawShapesControl.cs</DependentUpon>

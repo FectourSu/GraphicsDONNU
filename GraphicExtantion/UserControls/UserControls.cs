@@ -8,6 +8,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
 {
     class UserControls
     {
+        //one page
         public DrawShapesControl DrawShape { get; set; }
         public DrawCoordinateControl DrawCordinate { get; set; }
         public DrawTextControl DrawText { get; set; }
@@ -17,5 +18,11 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         public DrawGame DrawGame { get => new DrawGame(); }
         public DrawAnimateImage DrawAnimate { get; set; }
         public DrawPlayGame DrawPlay { get; set; }
+
+        //two page
+        public DrawRotate DrawRotate { get; set; }
+
+        public DrawClippingLines DrawClippingLines { get; set; }
+
     }
 }
