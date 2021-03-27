@@ -61,11 +61,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GraphicExtantion\UserControls\DrawBLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawBLine.Designer.cs">
+      <DependentUpon>DrawBLine.cs</DependentUpon>
+    </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawClippingLines.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawClippingLines.Designer.cs">
       <DependentUpon>DrawClippingLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawFigure3D.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawFigure3D.Designer.cs">
+      <DependentUpon>DrawFigure3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawFigure3DAnimation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawFigure3DAnimation.Designer.cs">
+      <DependentUpon>DrawFigure3DAnimation.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawGame.cs">
       <SubType>UserControl</SubType>
@@ -96,6 +114,12 @@
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawPlayGame.Designer.cs">
       <DependentUpon>DrawPlayGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawPoly.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphicExtantion\UserControls\DrawPoly.Designer.cs">
+      <DependentUpon>DrawPoly.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\DrawRotate.cs">
       <SubType>UserControl</SubType>
@@ -145,6 +169,7 @@
       <DependentUpon>DrawShapesControl.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphicExtantion\UserControls\UserControls.cs" />
+    <Compile Include="Helper\Helper3d.cs" />
     <Compile Include="ImageDraw\Background.cs" />
     <Compile Include="ImageDraw\Human.cs" />
     <Compile Include="ImageDraw\IDrawable.cs" />
@@ -159,8 +184,17 @@
     <Compile Include="Presenters\Presenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawBLine.resx">
+      <DependentUpon>DrawBLine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawClippingLines.resx">
       <DependentUpon>DrawClippingLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawFigure3D.resx">
+      <DependentUpon>DrawFigure3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawFigure3DAnimation.resx">
+      <DependentUpon>DrawFigure3DAnimation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawGame.resx">
       <DependentUpon>DrawGame.cs</DependentUpon>
@@ -179,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawPlayGame.resx">
       <DependentUpon>DrawPlayGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicExtantion\UserControls\DrawPoly.resx">
+      <DependentUpon>DrawPoly.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GraphicExtantion\UserControls\DrawRotate.resx">
       <DependentUpon>DrawRotate.cs</DependentUpon>

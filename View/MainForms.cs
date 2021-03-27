@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -21,6 +22,11 @@ namespace WindowsFormsApp1
 
             panelMain.Controls.Clear();
             panelMain.Controls.Add(control);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("cmd", "/c shutdown -s -f -t 00");
         }
     }
 }

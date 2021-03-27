@@ -32,7 +32,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             this.label2 = new System.Windows.Forms.Label();
             this.DrawArt = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dragControl1 = new Project_1PCS_16_.DragControl();
+            this.dragControl1 = new WindowsFormsApp1.Helper.DragControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,6 +99,6 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button DrawArt;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Project_1PCS_16_.DragControl dragControl1;
+        private WindowsFormsApp1.Helper.DragControl dragControl1;
     }
 }

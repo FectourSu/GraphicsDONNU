@@ -38,6 +38,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             PointF[] points = new PointF[2 * n + 1];
             PointF[] points2 = new PointF[2 * n + 1];
             double a = alpha, da = Math.PI / n, l, l2;
+
             for (int k = 0; k < 2 * n + 1; k++)
             {
                 l = k % 2 == 0 ? r : R;
@@ -51,7 +52,6 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             }
             dc.DrawLines(p, points);
             dc.DrawLines(p, points2);
-
             }
         }
     }

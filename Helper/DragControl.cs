@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace Project_1PCS_16_
+namespace WindowsFormsApp1.Helper
 {
     class DragControl : Component
     {

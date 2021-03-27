@@ -33,7 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.dragControl1 = new Project_1PCS_16_.DragControl();
+            this.dragControl1 = new WindowsFormsApp1.Helper.DragControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,6 +136,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private Project_1PCS_16_.DragControl dragControl1;
+        private WindowsFormsApp1.Helper.DragControl dragControl1;
     }
 }

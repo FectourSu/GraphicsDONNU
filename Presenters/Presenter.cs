@@ -44,7 +44,11 @@ namespace WindowsFormsApp1.Presenter
                 DrawPlay = new DrawPlayGame(),
                 DrawRotate = new DrawRotate(),
                 DrawClippingLines = new DrawClippingLines(),
-                DrawGenerationCurves = new DrawGenerationCurves()
+                DrawGenerationCurves = new DrawGenerationCurves(),
+                DrawB = new DrawBLine(),
+                DrawPoly = new DrawPoly(),
+                Draw3D = new DrawFigure3D(),
+                Draw3DAnimation = new DrawFigure3DAnimation()
             };
 
             #region Event
@@ -75,6 +79,15 @@ namespace WindowsFormsApp1.Presenter
             view.btn_DCL.Click += (s, e) => view.AddControlsToPanel(userControls.DrawClippingLines);
 
             view.btn_Gen.Click += (s, e) => view.AddControlsToPanel(userControls.DrawGenerationCurves);
+
+            view.btnBline.Click += (s, e) => view.AddControlsToPanel(userControls.DrawB);
+            
+            view.btnPoly.Click += (s, e) => view.AddControlsToPanel(userControls.DrawPoly);
+
+            view.btn3D.Click += (s, e) => view.AddControlsToPanel(userControls.Draw3D);
+
+            view.btn3DAnimation.Click += (s, e) => view.AddControlsToPanel(userControls.Draw3DAnimation);
+
             /*Close main form*/
             view.pClose.Click += (s, e) => view.Close();
             #endregion

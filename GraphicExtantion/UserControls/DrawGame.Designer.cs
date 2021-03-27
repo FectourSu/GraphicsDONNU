@@ -31,7 +31,7 @@ namespace WindowsFormsApp1.GraphicExtantion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DrawGame));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dragControl1 = new Project_1PCS_16_.DragControl();
+            this.dragControl1 = new WindowsFormsApp1.Helper.DragControl();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -80,7 +80,7 @@ namespace WindowsFormsApp1.GraphicExtantion
         }
 
         #endregion
-        private Project_1PCS_16_.DragControl dragControl1;
+        private WindowsFormsApp1.Helper.DragControl dragControl1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
     }

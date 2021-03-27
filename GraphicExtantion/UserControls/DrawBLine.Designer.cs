@@ -1,16 +1,17 @@
-﻿namespace WindowsFormsApp1.GraphicExtantion.UserControls
+﻿
+namespace WindowsFormsApp1.GraphicExtantion.UserControls
 {
-    partial class DrawStatistics
+    partial class DrawBLine
     {
         /// <summary> 
-        /// Обязательная переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary> 
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,16 +21,16 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором компонентов
+        #region Component Designer generated code
 
         /// <summary> 
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.DrawStatistic = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dragControl1 = new WindowsFormsApp1.Helper.DragControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -40,52 +41,52 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(3, 18);
+            this.label2.Location = new System.Drawing.Point(3, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 25);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "DRAW STATISTIC";
+            this.label2.Size = new System.Drawing.Size(137, 25);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "DRAW B-LINE";
             // 
-            // DrawStatistic
+            // button1
             // 
-            this.DrawStatistic.BackColor = System.Drawing.Color.Transparent;
-            this.DrawStatistic.FlatAppearance.BorderSize = 0;
-            this.DrawStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DrawStatistic.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DrawStatistic.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.DrawStatistic.Location = new System.Drawing.Point(8, 452);
-            this.DrawStatistic.Margin = new System.Windows.Forms.Padding(4);
-            this.DrawStatistic.Name = "DrawStatistic";
-            this.DrawStatistic.Size = new System.Drawing.Size(758, 62);
-            this.DrawStatistic.TabIndex = 17;
-            this.DrawStatistic.Text = "Draw";
-            this.DrawStatistic.UseVisualStyleBackColor = false;
-            this.DrawStatistic.Click += new System.EventHandler(this.DrawStatistic_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.Location = new System.Drawing.Point(0, 450);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(771, 65);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Draw";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 62);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 62);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(760, 362);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
             // dragControl1
             // 
             this.dragControl1.SelectControl = this;
             // 
-            // DrawStatistics
+            // DrawBLine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.DrawStatistic);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "DrawStatistics";
+            this.Name = "DrawBLine";
             this.Size = new System.Drawing.Size(770, 516);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -96,7 +97,7 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button DrawStatistic;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private WindowsFormsApp1.Helper.DragControl dragControl1;
     }

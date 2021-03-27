@@ -36,7 +36,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dragControl1 = new Project_1PCS_16_.DragControl();
+            this.dragControl1 = new WindowsFormsApp1.Helper.DragControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -137,7 +137,7 @@ namespace WindowsFormsApp1.GraphicExtantion.UserControls
 
         #endregion
 
-        private Project_1PCS_16_.DragControl dragControl1;
+        private WindowsFormsApp1.Helper.DragControl dragControl1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

@@ -49,14 +49,14 @@
             this.pDarkTheme = new System.Windows.Forms.PictureBox();
             this.btn_DCL = new System.Windows.Forms.Button();
             this.btn_Gen = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnBline = new System.Windows.Forms.Button();
+            this.btnPoly = new System.Windows.Forms.Button();
+            this.btn3D = new System.Windows.Forms.Button();
+            this.btn3DAnimation = new System.Windows.Forms.Button();
             this.pClose = new System.Windows.Forms.PictureBox();
-            this.dragControl1 = new Project_1PCS_16_.DragControl();
-            this.dragControl2 = new Project_1PCS_16_.DragControl();
+            this.dragControl1 = new WindowsFormsApp1.Helper.DragControl();
+            this.dragControl2 = new WindowsFormsApp1.Helper.DragControl();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pDark.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pLightTheme)).BeginInit();
@@ -328,89 +328,73 @@
             this.btn_Gen.Name = "btn_Gen";
             this.btn_Gen.Size = new System.Drawing.Size(211, 58);
             this.btn_Gen.TabIndex = 21;
-            this.btn_Gen.Text = "DrawCurves";
+            this.btn_Gen.Text = "DrawGeneration";
             this.btn_Gen.UseVisualStyleBackColor = false;
             this.btn_Gen.Visible = false;
             // 
-            // button3
+            // btnBline
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.Location = new System.Drawing.Point(4, 238);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 58);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "DrawRotate";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
+            this.btnBline.BackColor = System.Drawing.Color.Transparent;
+            this.btnBline.FlatAppearance.BorderSize = 0;
+            this.btnBline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBline.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnBline.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnBline.Location = new System.Drawing.Point(4, 238);
+            this.btnBline.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBline.Name = "btnBline";
+            this.btnBline.Size = new System.Drawing.Size(211, 58);
+            this.btnBline.TabIndex = 21;
+            this.btnBline.Text = "DrawBLine";
+            this.btnBline.UseVisualStyleBackColor = false;
+            this.btnBline.Visible = false;
             // 
-            // button4
+            // btnPoly
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.Location = new System.Drawing.Point(4, 293);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 58);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "DrawRotate";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Visible = false;
+            this.btnPoly.BackColor = System.Drawing.Color.Transparent;
+            this.btnPoly.FlatAppearance.BorderSize = 0;
+            this.btnPoly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPoly.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnPoly.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnPoly.Location = new System.Drawing.Point(4, 293);
+            this.btnPoly.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPoly.Name = "btnPoly";
+            this.btnPoly.Size = new System.Drawing.Size(211, 58);
+            this.btnPoly.TabIndex = 21;
+            this.btnPoly.Text = "DrawPoly";
+            this.btnPoly.UseVisualStyleBackColor = false;
+            this.btnPoly.Visible = false;
             // 
-            // button5
+            // btn3D
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button5.Location = new System.Drawing.Point(4, 346);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(211, 58);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "DrawRotate";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Visible = false;
+            this.btn3D.BackColor = System.Drawing.Color.Transparent;
+            this.btn3D.FlatAppearance.BorderSize = 0;
+            this.btn3D.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3D.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn3D.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn3D.Location = new System.Drawing.Point(4, 346);
+            this.btn3D.Margin = new System.Windows.Forms.Padding(4);
+            this.btn3D.Name = "btn3D";
+            this.btn3D.Size = new System.Drawing.Size(211, 58);
+            this.btn3D.TabIndex = 21;
+            this.btn3D.Text = "Draw3D";
+            this.btn3D.UseVisualStyleBackColor = false;
+            this.btn3D.Visible = false;
             // 
-            // button6
+            // btn3DAnimation
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button6.Location = new System.Drawing.Point(5, 404);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(211, 58);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "DrawRotate";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Visible = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button7.Location = new System.Drawing.Point(5, 457);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(211, 58);
-            this.button7.TabIndex = 21;
-            this.button7.Text = "DrawRotate";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Visible = false;
+            this.btn3DAnimation.BackColor = System.Drawing.Color.Transparent;
+            this.btn3DAnimation.FlatAppearance.BorderSize = 0;
+            this.btn3DAnimation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3DAnimation.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn3DAnimation.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn3DAnimation.Location = new System.Drawing.Point(5, 404);
+            this.btn3DAnimation.Margin = new System.Windows.Forms.Padding(4);
+            this.btn3DAnimation.Name = "btn3DAnimation";
+            this.btn3DAnimation.Size = new System.Drawing.Size(211, 58);
+            this.btn3DAnimation.TabIndex = 21;
+            this.btn3DAnimation.Text = "Draw3DAnimation";
+            this.btn3DAnimation.UseVisualStyleBackColor = false;
+            this.btn3DAnimation.Visible = false;
             // 
             // pClose
             // 
@@ -431,6 +415,23 @@
             // 
             this.dragControl2.SelectControl = this.panelMain;
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button7.Location = new System.Drawing.Point(5, 457);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(211, 58);
+            this.button7.TabIndex = 21;
+            this.button7.Text = "ShutDown";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Visible = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // MainForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -441,10 +442,10 @@
             this.Controls.Add(this.btn_DCL);
             this.Controls.Add(this.btn_Gen);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnBline);
+            this.Controls.Add(this.btn3DAnimation);
+            this.Controls.Add(this.btnPoly);
+            this.Controls.Add(this.btn3D);
             this.Controls.Add(this.btnDrawShapes);
             this.Controls.Add(this.btnGame);
             this.Controls.Add(this.btnCoordinate);
@@ -485,8 +486,7 @@
         public System.Windows.Forms.PictureBox pClose;
         public System.Windows.Forms.Panel pLineDarkVertical;
         public System.Windows.Forms.Panel pBlackLine;
-        private Project_1PCS_16_.DragControl dragControl1;
-        private Project_1PCS_16_.DragControl dragControl2;
+        private WindowsFormsApp1.Helper.DragControl dragControl1;
         public System.Windows.Forms.Button btnGame;
         public System.Windows.Forms.Button btnRotate;
         public System.Windows.Forms.Panel pDark;
@@ -497,10 +497,11 @@
         public System.Windows.Forms.Button btnDrawShapes;
         public System.Windows.Forms.Button btn_DCL;
         public System.Windows.Forms.Button btn_Gen;
-        public System.Windows.Forms.Button button3;
-        public System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Button button5;
-        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button btnBline;
+        public System.Windows.Forms.Button btnPoly;
+        public System.Windows.Forms.Button btn3D;
+        public System.Windows.Forms.Button btn3DAnimation;
+        private WindowsFormsApp1.Helper.DragControl dragControl2;
         public System.Windows.Forms.Button button7;
     }
 }
